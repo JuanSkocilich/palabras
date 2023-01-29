@@ -18,6 +18,8 @@
 
     --footer-background-color: #cfcfcf;
 
+    --container-title-all-categories-color: rgb(231, 231, 231);
+
     color-scheme: light;
 }
 
@@ -34,11 +36,13 @@
     --accent-color: var(--secondary-color);
 
     --webkit-scrollbar-color: #0f172a;
-    --webkit-scrollbar-thumb-color: rgb(0, 131, 253);
+    --webkit-scrollbar-thumb-color: rgb(4, 48, 90);
 
     --swiper-shallow-color: 0px 0px 0px rgb(255, 255, 255);
 
     --footer-background-color: #30303da9;
+
+    --container-title-all-categories-color: #243043;
 
     color-scheme: dark;
 }

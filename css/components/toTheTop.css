@@ -1,0 +1,104 @@
+.go-top-container {
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 4.6rem;
+    height: 4.6rem;
+    z-index: 100;
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: rgb(255, 255, 255);
+    transition: .2s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popop .3s ease-in-out;
+    width: 4.6rem;
+    height: 4.6rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popop {
+    0% {
+        width: 0rem;
+        height: 0rem;
+    }
+
+    50% {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    100% {
+        width: 4.6rem;
+        height: 4.6rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .go-top-container {
+        bottom: 0rem;
+        right: 0rem;
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .show .go-top-button {
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .show .go-top-button {
+        animation: popop2 .3s ease-in-out;
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+
+    .go-top-button i {
+        font-size: 1.2em;
+    }
+
+    @keyframes popop2 {
+        0% {
+            width: 0rem;
+            height: 0rem;
+        }
+
+        50% {
+            width: 4rem;
+            height: 4rem;
+        }
+
+        100% {
+            width: 2.6rem;
+            height: 2.6rem;
+        }
+    }
+}

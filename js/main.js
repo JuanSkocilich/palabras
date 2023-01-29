@@ -1,21 +1,24 @@
 import { categoriesArray } from "./categoryList.js"
-import { wordList } from "./wordList.js"
+import { animalsArray } from "./wordList.js"
 
 const showCategories = document.querySelector('.container-categories-wrap')
 
-categoriesArray.forEach((data) => {
-    showCategories.innerHTML += `
+if (showCategories !== null) {
+    categoriesArray.forEach((data) => {
+        showCategories.innerHTML += `
     <div class="container-category">
         <h1>${data.name}</h1>
         <img class="imgW" src="${data.img}">
         <a href="${data.href}">Jugar</a>
     </div>
     `
-})
+    })
+}
 
 document.addEventListener('keyup', (e) => {
     if (e.target.matches('#search')) {
         const search = document.querySelectorAll(".container-category")
+        const containerCategoriesWrap = document.querySelector('.container-categories-wrap')
         search.forEach((name) => {
             if (name.textContent.toLowerCase().includes(e.target.value.toLowerCase())) {
                 name.classList.remove("filter")
@@ -25,3 +28,20 @@ document.addEventListener('keyup', (e) => {
         })
     }
 })
+
+/* To the Top */
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 100) {
+        document.querySelector('.go-top-container').classList.add('show')
+    } else {
+        document.querySelector('.go-top-container').classList.remove('show')
+    }
+}
+
+document.querySelector('.go-top-container')?.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})
+/* ----------------------------------------------------------------------------------------------------------------------------------- */
