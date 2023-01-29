@@ -155,3 +155,46 @@
 .w8 {
     width: 560px;
 }
+
+@media screen and (max-width: 430px) {
+    .tile {
+        /* Box */
+        width: 50px;
+        height: 50px;
+    
+        /* Text */
+        font-size: 20px;
+    }
+
+    .w3 {
+        width: 170px;
+    }
+    
+    .w4 {
+        width: 220px;
+    }
+    
+    .w5 {
+        width: 280px;
+    }
+
+    .keyboard-row {
+        width: 290px;
+    }
+    
+    .key-tile {
+        width: 25px;
+        height: 25px;
+    
+        /* Text */
+        font-size: 13px;
+    }
+
+    .enter-key-tile {
+        width: 51px;
+        height: 25px;
+
+        /* Text */
+        font-size: 15px;
+    }
+}
