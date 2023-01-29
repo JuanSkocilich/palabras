@@ -1,0 +1,21 @@
+.footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: var(--footer-background-color);
+    text-align: center;
+}
+
+.container-footer {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}

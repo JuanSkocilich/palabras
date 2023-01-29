@@ -1,0 +1,29 @@
+.section1 {
+    padding: 70px;
+    *background-color: rgb(230, 230, 230);
+    *margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 120px auto;
+    width: 100%;
+}
+
+.section2 {
+    *background-color: brown;
+    *margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 71px auto;
+    max-width: 1920px;
+}
+
+@media screen and (max-width: 850px) {
+    .section1 {
+        padding: 0;
+    }
+}
+

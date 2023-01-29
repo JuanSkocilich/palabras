@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todas las categorias</title>
+
+    <!-- Inicial -->
+    <script src="./js/components/toggleTheme/InicialThemeUser.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/81cc280855.js" crossorigin="anonymous"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Global css -->
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
+    <link rel="stylesheet" href="./css/components/navbar.css">
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/all-categories.css">
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Components -->
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+</head>
+
+<body>
+
+    <header>
+        <div class="container-sub-header">
+            <div>
+                <img class="logo" src="" alt="Logo">
+            </div>
+            <div class="container-full-nav">
+                <button id="abrir" class="abrir-menu"><i class="theme-color-bars fa-solid fa-bars"></i></i></button>
+                <button class="dark-mode-btn" aria-label="Activar modo oscuro">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="light-mode-btn" aria-label="Activar modo claro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <nav class="nav" id="nav">
+                    <button class="cerrar-menu" id="cerrar"><i class="theme-color-xmark fa-solid fa-xmark"></i></button>
+
+                    <ul class="nav-list">
+                        <li><a href="index.html" class=""><i class="house-icon fa-solid fa-house"></i> inicio</a></li>
+                        <li><a href="#">Mejores categorias</a></li>
+                        <li><a href="all-categories.html">Todas las categorias</a></li>
+                        <li><a href="request-category.html">Solicitar categoria</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-all-categories">
+        <div class="container-sub-all-categories">
+            <div class="container-title-all-categories">
+                <h1>Todas las categorias</h1>
+            </div>
+            <div class="container-input-all-categories">
+                <input type="text" id="search" placeholder="Buscar categoria...">
+            </div>
+            <div class="container-categories-wrap">
+            
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <span class="text-muted"><a href="#">&copy; Adivina la Palabra</a></span>
+        </div>
+    </footer>
+
+    <!-- Links -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Components -->
+    <script src="./js/components/toggleTheme/theme.js"></script>
+    <script src="./js/components/navbar/navbar.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- JS -->
+    <script src="./js/swiper.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+</body>
+
+</html>

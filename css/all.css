@@ -1,0 +1,75 @@
+:root {
+    --theme-color: white;
+    --primary-color: #124f88;
+    --secondary-color: #f7c331;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: 0px 4px 3px #e5e5e5;
+    --menu-mobile-background-color: #3a4460;
+
+    --accent-color: var(--primary-color);
+    --primary-color-inverse: black;
+    --transition: 0.3s ease-in-out;
+    
+    --webkit-scrollbar-color: rgb(224, 221, 221);
+    --webkit-scrollbar-thumb-color: rgb(196, 196, 196);
+
+    --swiper-shallow-color: 0px 2px 20px rgb(175, 175, 175);
+
+    --footer-background-color: #cfcfcf;
+
+    color-scheme: light;
+}
+
+
+:root[data-theme="dark"] {
+    --theme-color: #0f172a;
+    --primary-color: #243043;
+    --secondary-color: #9dc8db;
+    --text-color: rgba(255, 255, 255, 0.87);
+    --text-color-inverse: var(--text-color);
+    --navbar-shallow-color: 0px 1px 3px #e5e5e5;
+    --menu-mobile-background-color: #18213e;
+
+    --accent-color: var(--secondary-color);
+
+    --webkit-scrollbar-color: #0f172a;
+    --webkit-scrollbar-thumb-color: rgb(0, 131, 253);
+
+    --swiper-shallow-color: 0px 0px 0px rgb(255, 255, 255);
+
+    --footer-background-color: #30303da9;
+
+    color-scheme: dark;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color var(--transition), box-shadow var(--transition);
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    *position: relative;
+    *overflow: scroll;
+    *width: 100%;
+    *height: 100vh;
+    background-color: var(--theme-color);
+}
+
+body::-webkit-scrollbar {
+    background-color: var(--webkit-scrollbar-color);
+    width: 13px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--webkit-scrollbar-thumb-color);
+    *border-radius: 5px;
+}

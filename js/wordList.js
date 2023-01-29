@@ -1,0 +1,1 @@
+export const wordList = ["era", "pie", "jugo", "gato", "juego", "cantar", "bailar", "perro", "sonar", "teclado"]
