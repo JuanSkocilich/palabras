@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/components/footer.css">
     <link rel="stylesheet" href="./css/components/navbar.css">
+    <link rel="stylesheet" href="./css/components/toTheTop.css">
     <!-- ------------------------------------------------------------------------------------------------------------------ -->
 
     <!-- CSS -->
@@ -63,7 +64,7 @@
     <section class="section-form">
         <div class="sub-container-form">
             <h1 class="form-title">Solicitar categoria</h1>
-            <form action="" name="category" netlify>
+            <form action="" name="category" netlify method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <div class="form-group">
                     <label for="name">Nombre de la categoria</label>
                     <input type="text" name="name" id="name" required>
@@ -82,6 +83,18 @@
         </div>
     </section>
 
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <span class="text-muted"><a href="#">&copy; Adivina la Palabra</a></span>
+        </div>
+    </footer>
+
     <!-- Links -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- ------------------------------------------------------------------------------------------------------------------ -->
@@ -93,6 +106,7 @@
 
     <!-- JS -->
     <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
     <!-- ------------------------------------------------------------------------------------------------------------------ -->
 </body>
 
