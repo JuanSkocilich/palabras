@@ -65,7 +65,7 @@ function resetPlay() {
         }
     }, 1000)
 } */
-
+console.log(width)
 function intialize() {
     /* inte()
     time.style.display = 'block' */
@@ -91,7 +91,7 @@ function intialize() {
             board.classList.toggle('w8')
             break;
     }
-    console.log(width)
+    
 
     // Create the game board
     for (let r = 0; r < height; r++) {
