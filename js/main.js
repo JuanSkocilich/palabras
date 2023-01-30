@@ -7,8 +7,8 @@ if (showCategories !== null) {
     categoriesArray.forEach((data) => {
         showCategories.innerHTML += `
     <div class="container-category">
+    <img class="imgW" src="${data.img}">
         <h1>${data.name}</h1>
-        <img class="imgW" src="${data.img}">
         <a href="${data.href}">Jugar</a>
     </div>
     `
