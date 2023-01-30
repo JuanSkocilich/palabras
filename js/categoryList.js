@@ -7,7 +7,7 @@ export const categoriesArray = [
         href: '../categories/animals.html'
     },
     {
-        name: 'Verbos',
+        name: 'Verbos en infinitivo',
         img: img,
         href: '../categories/verbs.html'
     },

@@ -1,12 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
+
+    <!-- Inicial -->
+    <script src="../js/components/toggleTheme/InicialThemeUser.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Links -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/81cc280855.js" crossorigin="anonymous"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Global css -->
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/components/footer.css">
+    <link rel="stylesheet" href="../css/components/navbar.css">
+    <link rel="stylesheet" href="../css/components/toTheTop.css">
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/wordle.css">
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Components -->
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
 </head>
+
 <body>
-    
+    <header>
+        <div class="container-sub-header">
+            <div>
+                <!-- <img class="logo" src="" alt="Logo"> -->
+            </div>
+            <div class="container-full-nav">
+                <button id="abrir" class="abrir-menu"><i class="theme-color-bars fa-solid fa-bars"></i></i></button>
+                <button class="dark-mode-btn" aria-label="Activar modo oscuro">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="light-mode-btn" aria-label="Activar modo claro">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <nav class="nav" id="nav">
+                    <button class="cerrar-menu" id="cerrar"><i class="theme-color-xmark fa-solid fa-xmark"></i></button>
+
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class=""><i class="house-icon fa-solid fa-house"></i> inicio</a>
+                        </li>
+                        <!-- <li><a href="#">Mejores categorias</a></li> -->
+                        <li><a href="../all-categories.html">Todas las categorias</a></li>
+                        <li><a href="../request-category.html">Solicitar categoria</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-wordle">
+        <div class="sub-container-wordle">
+            <div class="title-container">
+                <h1 id="title">Adivina la palabra</h1>
+            </div>
+            <!-- <h1 style="display: none;" id="time">80</h1> -->
+            <button class="btn" id="jugar">Jugar</button>
+            <h1 id="demo"></h1>
+            <div class="board">
+
+            </div>
+            <br>
+            <h1 id="answer"></h1>
+            <button style="margin-top: 10px; display: none;" class="btn" id="reset">jugar de nuevo</button>
+            <div class="keyboard-row">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Links -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- Components -->
+    <script src="../js/components/toggleTheme/theme.js"></script>
+    <script src="../js/components/navbar/navbar.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
+
+    <!-- JS -->
+    <script type="module" src="../js/components/wordleCategory/verbsWordle.js"></script>
+    <script type="module" src="../js/main.js"></script>
+    <!-- ------------------------------------------------------------------------------------------------------------------ -->
 </body>
+
 </html>
