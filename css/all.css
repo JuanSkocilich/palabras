@@ -10,7 +10,7 @@
     --accent-color: var(--primary-color);
     --primary-color-inverse: black;
     --transition: 0.3s ease-in-out;
-    
+
     --webkit-scrollbar-color: rgb(224, 221, 221);
     --webkit-scrollbar-thumb-color: rgb(196, 196, 196);
 
@@ -53,6 +53,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     transition: background-color var(--transition), box-shadow var(--transition);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 html {
