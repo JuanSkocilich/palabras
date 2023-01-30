@@ -13,6 +13,7 @@
 }
 
 .board {
+    *background-color: #787C7E;
     color: white;
     justify-content: center;
     *background-color: #e6eff1;
@@ -83,7 +84,7 @@
 .absent {
     background-color: #787C7E;
     color: white;
-    *border-color:white;
+    *border-color: white;
     border: none;
 }
 
@@ -141,35 +142,17 @@
 }
 
 .w5 {
-    width: 350px;
+    width: 325px;
 }
 
-.w6 {
-    width: 420px;
-}
-
-.w7 {
-    width: 465px;
-}
-
-.w8 {
-    width: 560px;
-}
-
-
-
-@media screen and (min-width: 280px) and (max-width: 410px) {
+@media screen and (min-width: 220px) and (max-width: 410px) {
     .tile {
-        /* Box */
         width: 50px;
         height: 50px;
-    
-        /* Text */
-        font-size: 20px;
     }
 
     .w3 {
-        width: 170px;
+        width: 165px;
     }
     
     .w4 {
@@ -177,18 +160,18 @@
     }
     
     .w5 {
-        width: 280px;
+        width: 275px;
     }
 
     .keyboard-row {
-        width: 290px;
-        background-color: #787C7E;
+        width: 270px;
+        *background-color: #6AAA64;
     }
-    
+
     .key-tile {
         width: 25px;
         height: 25px;
-    
+
         /* Text */
         font-size: 13px;
     }
@@ -204,38 +187,20 @@
 
 
 @media screen and (min-width: 410px) and (max-width: 500px) {
-    .tile {
-        /* Box */
-        width: 50px;
-        height: 50px;
-    
-        /* Text */
-        font-size: 20px;
-    }
 
-    .w3 {
-        width: 170px;
-    }
     
-    .w4 {
-        width: 220px;
-    }
-    
-    .w5 {
-        width: 280px;
-    }
 
     .keyboard-row {
-        background-color: #6AAA64;
         width: 380px;
+        *background-color: #ff0000;
     }
-    
+
     .key-tile {
         width: 35px;
         height: 35px;
-    
+
         /* Text */
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .enter-key-tile {
