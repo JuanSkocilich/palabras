@@ -156,7 +156,9 @@
     width: 560px;
 }
 
-@media screen and (max-width: 430px) {
+
+
+@media screen and (min-width: 280px) and (max-width: 410px) {
     .tile {
         /* Box */
         width: 50px;
@@ -180,6 +182,7 @@
 
     .keyboard-row {
         width: 290px;
+        background-color: #787C7E;
     }
     
     .key-tile {
@@ -193,6 +196,51 @@
     .enter-key-tile {
         width: 51px;
         height: 25px;
+
+        /* Text */
+        font-size: 15px;
+    }
+}
+
+
+@media screen and (min-width: 410px) and (max-width: 500px) {
+    .tile {
+        /* Box */
+        width: 50px;
+        height: 50px;
+    
+        /* Text */
+        font-size: 20px;
+    }
+
+    .w3 {
+        width: 170px;
+    }
+    
+    .w4 {
+        width: 220px;
+    }
+    
+    .w5 {
+        width: 280px;
+    }
+
+    .keyboard-row {
+        background-color: #6AAA64;
+        width: 380px;
+    }
+    
+    .key-tile {
+        width: 35px;
+        height: 35px;
+    
+        /* Text */
+        font-size: 13px;
+    }
+
+    .enter-key-tile {
+        width: 71px;
+        height: 35px;
 
         /* Text */
         font-size: 15px;
